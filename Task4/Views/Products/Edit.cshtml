@@ -1,0 +1,14 @@
+﻿@model Task4.Models.Product
+
+<h1>Изменение товара</h1>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id"/>
+    <label>Название товара</label>
+    <input asp-for="Name" class="form-control"/>
+    <label>Цена</label>
+    <input asp-for="Price" class="form-control"/>
+    <label>Количество</label>
+    <input asp-for="Quantity" class="form-control"/>
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px">Сохранить</button>
+    <a asp-action="Index" class="btn btn-secondary" style="margin-top: 10px; margin-left: 10px">Отмена</a>
+</form>
